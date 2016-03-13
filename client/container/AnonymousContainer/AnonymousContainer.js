@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 
 
-class  HomeContainer extends Component {
+class  AnonymousContainer extends Component {
   constructor(props,context) {
     super(props,context);
   }
@@ -21,4 +21,4 @@ class  HomeContainer extends Component {
     );
   }
 }
-export default connect()(HomeContainer);
+export default connect()(AnonymousContainer);

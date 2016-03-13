@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import {
   Navbar,Nav,NavItem,NavDropdown,MenuItem
 } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function Header(props,context){
   return(
@@ -20,7 +21,9 @@ function Header(props,context){
               <NavItem eventKey={1} href="#">关于</NavItem>
               <NavItem eventKey={2} href="#">服务</NavItem>
               <NavItem eventKey={3} href="#">联系</NavItem>
-              <NavItem eventKey={4} href="#">注册</NavItem>
+              <LinkContainer to={{ pathname: '/auth/signup' }}>
+                <NavItem eventKey={4} href="#">注册</NavItem>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
